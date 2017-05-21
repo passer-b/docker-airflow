@@ -1,0 +1,5 @@
+# ignore git files
+.git
+
+# ignore unnecessary files
+README.md
