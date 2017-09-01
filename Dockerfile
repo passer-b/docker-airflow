@@ -14,6 +14,7 @@ RUN set -ex \
 		libxml2 \
 		libxml2-dev \
 		linux-headers \
+		tzdata \
 	&& ln -s /usr/include/locale.h /usr/include/xlocale.h \
 	&& CFLAGS="-I/usr/include/libxml2" pip install --no-cache-dir airflow \
 	&& apk del .build-deps
